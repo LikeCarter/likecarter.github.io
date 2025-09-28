@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LikeCarter</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main class="max-w-xl mx-auto px-6 py-20 relative min-h-screen font-light">
-        <!-- Profile Section -->
-        <section class="flex items-center">
-            <div>
-                <h1 class="mb-0.5 text-xl text-slate-900 dark:text-slate-100">
-                    LikeCarter
-                </h1>
-            </div>
-        </section>
+      <!-- Blog Section -->
+      <section class="my-14 text-sm">
+        <!-- Featured Blog Post -->
+        <div class="flex flex-col flex-1 mb-16">
+          <h4 class="text-slate-900 dark:text-slate-100 mb-4">
+            <a href="blog/penrose.html" class="hover:underline">
+              The Emperor's New Mind
+            </a>
+          </h4>
+          <p class="text-slate-600 dark:text-gray-400 mb-4">
+            I'm reading The Emperor's New Mind (1989) by Robert Penrose. The
+            idea of the book is that computers cannot ever be truly conscious. I
+            disagree with him, but it's a good read.
+          </p>
+          <p class="text-slate-600 dark:text-gray-400 mb-4">
+            Penrose thinks the brain is a big complicated circuit. I believe the
+            brain is a big complicated circuit. But Penrose also thinks that the
+            quantum properties of the brain are not yet understood, and
+            <italic>may</italic> be responsible for our concious experience.
+          </p>
+          <p class="text-slate-600 dark:text-gray-400 mb-4">
+            His argument is based on Godel's Incompleteness Theorem, that there
+            are statements that are true but cannot be proven inside any
+            computational system, and human's are exempt from this, because we
+            can understand this contradiction. Maybe it's just that human brains
+            are noisy, but so are large-language models. In fairness, he didn't
+            write this book in 2025.
+          </p>
+          <p class="text-slate-600 dark:text-gray-400 mb-4">
+            I've always thought that conciousness was the product of a "brain"
+            within a "brain". An executive control circuit that lives outside
+            the thinking circuit. Would be trivial to test with large-language
+            models of today, I'll be right back...
+          </p>
+        </div>
 
-        <!-- Blog Section -->
-        <section class="my-14 text-sm">
-            
-            <!-- Featured Blog Post -->
-            <div class="flex flex-col flex-1 mb-16">
-                <h4 class="text-slate-900 dark:text-slate-100 mb-4">
-                    <a href="blog/penrose.html" class="hover:underline">
-                        The Emperor's New Mind
-                    </a>
-                </h4>
-                <p class="text-slate-600 dark:text-gray-400 mb-4">
-                    I'm reading The Emperor's New Mind (1989) by Robert Penrose. The idea of the book is that computers cannot ever be truly conscious. I disagree with him, but it's a good read.
-                </p>
-                <p class="text-slate-600 dark:text-gray-400 mb-4">
-                    Penrose thinks the brain is a big complicated circuit. I believe the brain is a big complicated circuit. But Penrose also thinks that the quantum properties of the brain are not yet understood, and <italic>may</italic> be responsible for our concious experience.
-                </p>
-                <p class="text-slate-600 dark:text-gray-400 mb-4">
-                    His argument is based on Godel's Incompleteness Theorem, that there are statements that are true but cannot be proven inside any computational system, and human's are exempt from this, because we can understand this contradiction. Maybe it's just that human brains are noisy, but so are large-language models. In fairness, he didn't write this book in 2025.
-                </p>
-                <p class="text-slate-600 dark:text-gray-400 mb-4">
-                    I've always thought that conciousness was the product of a "brain" within a "brain". An executive control circuit that lives outside the thinking circuit. Would be trivial to test with large-language models of today, I'll be right back...
-                </p>
-            </div>
-
-            <!-- Other Blog Posts -->
-            <div class="flex flex-col gap-8">
-                <!-- <div class="flex  flex-wrap">
+        <!-- Other Blog Posts -->
+        <div class="flex flex-col gap-8">
+          <!-- <div class="flex  flex-wrap">
                     <div class="sm:mr-8 mr-2 sm:max-w-48 w-full text-slate-400 dark:text-slate-400">
                         <a href="blog/sample.html" class="hover:underline">
                         Penrose
@@ -58,7 +64,7 @@
                         </p>
                     </div>
                 </div> -->
-                <!-- <div class="flex  flex-wrap">
+          <!-- <div class="flex  flex-wrap">
                     <div class="sm:mr-8 mr-2 sm:max-w-48 w-full text-slate-400 dark:text-slate-400">
                         <a href="blog/sample.html" class="hover:underline">   
                         Sample2
@@ -84,8 +90,8 @@
                         </p>
                     </div>
                 </div> -->
-            </div>
-        </section>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

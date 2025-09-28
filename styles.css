@@ -8,16 +8,14 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
     --color-slate-100: oklch(96.8% 0.007 247.896);
-    --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-600: oklch(44.6% 0.043 257.281);
     --color-slate-900: oklch(20.8% 0.042 265.755);
+    --color-slate-950: oklch(12.9% 0.042 264.695);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --spacing: 0.25rem;
     --container-xl: 36rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
     --font-weight-light: 300;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -181,12 +179,6 @@
   .my-14 {
     margin-block: calc(var(--spacing) * 14);
   }
-  .mr-2 {
-    margin-right: calc(var(--spacing) * 2);
-  }
-  .mb-0\.5 {
-    margin-bottom: calc(var(--spacing) * 0.5);
-  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
@@ -199,9 +191,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-full {
-    width: 100%;
-  }
   .max-w-xl {
     max-width: var(--container-xl);
   }
@@ -210,12 +199,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  .items-center {
-    align-items: center;
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -230,16 +213,9 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
-  }
-  .text-slate-400 {
-    color: var(--color-slate-400);
   }
   .text-slate-600 {
     color: var(--color-slate-600);
@@ -254,14 +230,9 @@
       }
     }
   }
-  .sm\:mr-8 {
-    @media (width >= 40rem) {
-      margin-right: calc(var(--spacing) * 8);
-    }
-  }
-  .sm\:max-w-48 {
-    @media (width >= 40rem) {
-      max-width: calc(var(--spacing) * 48);
+  .dark\:bg-slate-950 {
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-slate-950);
     }
   }
   .dark\:text-gray-400 {
@@ -272,11 +243,6 @@
   .dark\:text-slate-100 {
     @media (prefers-color-scheme: dark) {
       color: var(--color-slate-100);
-    }
-  }
-  .dark\:text-slate-400 {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-slate-400);
     }
   }
 }

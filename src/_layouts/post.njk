@@ -2,7 +2,10 @@
 layout: base.njk
 ---
 <article>
-  <h1>{{ title }}</h1>
-  <time>{{ date | dateDisplay }}</time>
+  <header>
+    <h1>{{ title }}</h1>
+    <time datetime="{{ date | isoDate }}">{{ date | dateDisplay }}</time>
+  </header>
   {{ content | safe }}
 </article>
+

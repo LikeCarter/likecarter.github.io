@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("isoDate", (date) => {
+    return new Date(date).toISOString().split("T")[0];
+  });
+
   eleventyConfig.addFilter("truncate", (str, len) => {
     if (!str) return "";
     if (str.length <= len) return str;

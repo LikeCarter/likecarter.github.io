@@ -1,0 +1,16 @@
+{
+  "name": "likecarter-blog",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2"
+  },
+  "dependencies": {
+    "@iktakahiro/markdown-it-katex": "4.0.1",
+    "katex": "0.16.28",
+    "markdown-it": "14.1.1"
+  }
+}
